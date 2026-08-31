@@ -1,0 +1,46 @@
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# ── Virtual environment ───────────────────────────────────────
+venv/
+env/
+.venv/
+venv*/
+
+# ── Dataset (54,000+ images — too large for git) ─────────────
+raw/
+
+# ── Trained model (download from Kaggle after training) ──────
+saved_models/*.keras
+saved_models/*.h5
+# class_names.json is small — keep it in git
+!saved_models/class_names.json
+
+# ── Generated outputs (recreated by running the code) ────────
+outputs/
+
+# ── Windows metadata files ────────────────────────────────────
+*.Zone.Identifier
+Thumbs.db
+desktop.ini
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── TensorFlow logs ───────────────────────────────────────────
+logs/
